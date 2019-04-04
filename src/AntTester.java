@@ -6,7 +6,7 @@ public class AntTester {
 	public static void main(String[] args) {
 		int k = (int) random(100);
 		for (int i = 0; i<sqrt(k);i++) {
-			if (i<5) System.out.println("<=25");
+			if (i<5) System.out.println("absolute difference <=25 in branch-b");
 		}
 	}
 
