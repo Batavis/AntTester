@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
    	<project name="AntTester" default="info">
-	<property name="newpropertyC" value="aiseoügjaeios">
+	<property name="newpropertyC" value="aiseoügjaeios"/>
    	<target name="info">
      	<echo>Hello World - Welcome to Apache Ant!</echo>
    	</target>
