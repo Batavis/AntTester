@@ -1,8 +1,10 @@
 <?xml version="1.0"?>
    	<project name="AntTester" default="info">
+	<property name="newproperty" value="test1">
    	<target name="info">
      	<echo>Hello World - Welcome to Apache Ant!</echo>
    	</target>
+	
    	<target name="ant-folder">
    		<delete dir="${basedir}/testdir"/>
    	</target>
