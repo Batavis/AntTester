@@ -9,5 +9,8 @@ public class AntTester {
 			if (i<5) System.out.println("difference <=25 for branch-master");
 		}
 	}
-
+	
+	public int product(int factor1, int factor2) {
+		return factor1 * factor2;
+	}
 }
