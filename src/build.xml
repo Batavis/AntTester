@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
    	<project name="AntTester" default="info">
-	<property name="moreproperties" value="xml">
+	<property name="newpropertyABC" value="aiseoügjaeios"/>
    	<target name="info">
      	<echo>Hello World - Welcome to Apache Ant!</echo>
    	</target>
@@ -11,12 +11,12 @@
 	<target name="test">
 		<junit>
 		  <classpath>
-            <pathelement location="bin" />    
-            <pathelement location="lib/junit-4.10.jar"/>
+            <pathelement location="${classpath}" />    
+            <pathelement location="lib/junit.jar"/>
           </classpath>    
-          <batchtest>
-            <fileset dir="${test}">
-              <include name="*Test*" />
+          <batchtest fork="yes" todir="${src.dir]">
+            <fileset dir="${src.dir}">
+              <include name="*Test*.java" />
             </fileset>
           </batchtest>
           <formatter type="brief" usefile="false"/>
