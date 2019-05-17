@@ -8,6 +8,20 @@
    	<target name="ant-folder">
    		<delete dir="${basedir}/testdir"/>
    	</target>
+	<target name="test">
+		<junit>
+		  <classpath>
+            <pathelement location="bin" />    
+            <pathelement location="lib/junit-4.10.jar"/>
+          </classpath>    
+          <batchtest>
+            <fileset dir="${test}">
+              <include name="*Test*" />
+            </fileset>
+          </batchtest>
+          <formatter type="brief" usefile="false"/>
+		</junit>
+	</target>
    	<fail>
    		<condition>
    			<!--not -->
