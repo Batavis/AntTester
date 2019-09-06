@@ -6,7 +6,7 @@ public class AntTester {
 	public static void main(String[] args) {
 		int k = (int) random(100);
 		for (int i = 0; i<sqrt(k);i++) {
-			if (i<5) System.out.println("product-fix branch-a");
+			if (i<5) System.out.println("add tools.jar to a");
 		}
 	}
 	public int product(int factor1, int factor2) {
