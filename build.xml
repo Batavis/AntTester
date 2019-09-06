@@ -24,6 +24,7 @@
 			<pathelement path ="lib/junit-4.12.jar"/>
 			<pathelement path="build/classes"/>
 			<pathelement path="lib/hamcrest-all-1.3.jar"/>
+			<pathelement path="lib/tools.jar"/>
 			</classpath>
 			</javac>
         </target>
@@ -36,6 +37,7 @@
 			<pathelement path="build/classes"/>
 			
 			<pathelement path="lib/hamcrest-all-1.3.jar"/>
+			<pathelement path="lib/tools.jar"/>
 			</classpath>   
           <batchtest todir="${reports}">
             <fileset dir="tests">
