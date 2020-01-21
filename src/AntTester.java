@@ -8,6 +8,7 @@ public class AntTester {
 		for (int i = 0; i<sqrt(k);i++) {
 			if (i<5) System.out.println("new commit for b");
 		}
+		int z = k-1;
 	}
 	public int product(int factor1, int factor2) {
 		return factor1 * factor2;
