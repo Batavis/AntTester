@@ -25,9 +25,5 @@ public class MyTests {
 		//assertEquals(0, tester.product8(10,10));
 	}
 	
-	@Test
-	public void testString() {
-		assertEquals("", "0");
-	}
 	
 }
