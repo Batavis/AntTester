@@ -9,8 +9,11 @@ public class MyTests {
 		
 		//test to pass
 		assertEquals(0, tester.product(10, 0));
-		
 	}
-	 
 	
+    @Test
+    public void testString() {
+		//test to fail
+		assertEquals("0", null);
+	}
 }
