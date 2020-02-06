@@ -4,7 +4,7 @@ import org.junit.Test;
 public class MyTests {
 	
     @Test
-	public void testProductWithZero() {
+    public void testProductWithZero() {
 		AntTester tester = new AntTester();
 		
 		//test to pass
