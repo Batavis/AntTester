@@ -13,6 +13,8 @@ public class MyTests {
 	
     @Test
     public void testString() {
+		AntTester tester = new AntTester();
+		
 		//test to fail
 		assertEquals("0", null);
 	}
