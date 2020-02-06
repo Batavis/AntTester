@@ -1,26 +1,11 @@
 <?xml version="1.0"?>
     <project name="AntTester" default="info">
-    <!-- <property name="moreproperties" value="xml">
-    </property>
-    <target name="info">
-        <echo>Hello World - Welcome to Apache Ant!</echo>
-    </target>
-     
-    <target name="ant-folder">
-        <delete dir="${basedir}/testdir"/>
-    </target>
-	-->
-    <path id = "master-classpath">
-        <pathelement location="lib/junit.jar"/>
-        <pathelement location = "build/classes"/>
-    </path>
     <target name="compile">
             <mkdir dir="build/classes"/>
             <javac srcdir="src" destdir="build/classes" source="8">
             </javac>
             <javac srcdir="tests" destdir="build/classes" source="8">
             <classpath>
-			<pathelement path ="${classpath}"/>
 			<pathelement path ="lib/junit-4.12.jar"/>
 			<pathelement path="build/classes"/>
 			<pathelement path="lib/hamcrest-all-1.3.jar"/>
@@ -29,17 +14,16 @@
 			</javac>
         </target>
     <target name="test" depends="compile">
-      <mkdir dir="${reports}"/>
+      <mkdir dir="reports"/>
         <junit printsummary="on" fork="true">
           <classpath>
-			<pathelement path ="${classpath}"/>
 			<pathelement path ="lib/junit-4.12.jar"/>
 			<pathelement path="build/classes"/>
 			
 			<pathelement path="lib/hamcrest-all-1.3.jar"/>
 			<pathelement path="lib/tools.jar"/>
 			</classpath>   
-          <batchtest todir="${reports}">
+          <batchtest todir="reports">
             <fileset dir="tests">
               <include name="**/*Test*.java" />
             </fileset>
