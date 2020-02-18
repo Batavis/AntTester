@@ -26,4 +26,9 @@ public class MyTests {
 		assertEquals(4/k, 4);
 	}
 	
+	@Ignore
+	@Test
+	public void testSkip() {
+		assertEquals("", null);
+	}
 }
