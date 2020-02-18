@@ -20,6 +20,12 @@ public class MyTests {
 		assertEquals("0", null);
 	}
 	
+	@Test
+	public void testError() {
+		int k = 0;
+		assertEquals(4/k, 4);
+	}
+	
 	@Ignore
 	@Test
 	public void testSkip() {
