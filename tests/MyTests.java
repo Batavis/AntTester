@@ -22,6 +22,7 @@ public class MyTests {
 	
 	@Test
 	public void testError() {
+		//test to throw error
 		int k = 0;
 		assertEquals(4/k, 4);
 	}
@@ -29,6 +30,7 @@ public class MyTests {
 	@Ignore
 	@Test
 	public void testSkip() {
+		//test to be skipped
 		assertEquals("", null);
 	}
 }
