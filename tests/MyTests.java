@@ -1,6 +1,7 @@
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+import org.junit.Ignore;
 public class MyTests {
 	
     @Test
@@ -17,5 +18,11 @@ public class MyTests {
 		
 		//test to fail
 		assertEquals("0", null);
+	}
+	
+	@Ignore
+	@Test
+	public void testSkip() {
+		assertEquals("", null);
 	}
 }
