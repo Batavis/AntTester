@@ -8,4 +8,8 @@ public class Tests2 {
 		assertEquals(4, new AntTester().product(2,2));
 	}
 	
+	@Test
+	public void testFailure() {
+		assertEquals(1, "1");
+	}
 }
